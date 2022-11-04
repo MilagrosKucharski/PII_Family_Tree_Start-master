@@ -6,15 +6,15 @@ namespace Library
 {
     public class Person
     {
-        private int Age;
-        private string  Name;
+        public int Age { get; private set; }
+        public string  Name {get; private set; }
 
         private List<Person> children = new List<Person>();
 
         public int age {
             get
             {
-                return this.age;
+                return this.Age;
             }
         }
          public int edad {
