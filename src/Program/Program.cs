@@ -27,8 +27,19 @@ namespace Program
             n3.AddChildren(n7);
             n3.AddChildren(n8);
 
-            n1.Accept()
+            VisitarSumaEdad visitor = new VisitarSumaEdad();
+            n1.Accept(visitor);
+            Console.WriteLine(visitor.Resultado);
 
+            VisitarHojaMasGrande visitor2 = new VisitarHojaMasGrande();
+            n1.Accept(visitor2);
+            Console.WriteLine(visitor2.Resultado);
+
+            VisitarNombreMasLargo visitor3 = new VisitarNombreMasLargo();
+            n1.Accept(visitor3);
+            Console.WriteLine(visitor3.Resultado);
+
+        
 
             
         }

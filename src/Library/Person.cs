@@ -6,23 +6,12 @@ namespace Library
 {
     public class Person
     {
-        private int Age;
-        private string  Name;
+        public int Age {get; private set; }
+        public string  Name {get; private set;}
 
         private List<Person> children = new List<Person>();
 
-        public int age {
-            get
-            {
-                return this.age;
-            }
-        }
-         public int edad {
-            get
-            {
-                return this.edad;
-            }
-        }
+        
 
         public ReadOnlyCollection<Person> Children { 
             get
@@ -34,7 +23,7 @@ namespace Library
         public Person(int age, string name)
         {
             this.Age = age;
-            this. Name = name;
+            this.Name = name;
         }
 
         public void AddChildren(Person n)
