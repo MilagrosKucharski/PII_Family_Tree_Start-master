@@ -1,15 +1,7 @@
 namespace Library
 {
-    public abstract class Visitor
+    public interface IVisitor
     {
-        public int SumaEdades
-        {
-            get
-            {
-                return this.Sumado;
-            }
-        }
-        protected int Sumado {get;}
-        public abstract void  Visit (Person person)
+        public abstract void  Visit (Person person);
     }
 }

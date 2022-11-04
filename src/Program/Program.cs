@@ -27,8 +27,10 @@ namespace Program
             n3.AddChildren(n7);
             n3.AddChildren(n8);
 
+            n1.Accept()
 
-            // visitar el árbol aquí
+
+            
         }
     }
 }
